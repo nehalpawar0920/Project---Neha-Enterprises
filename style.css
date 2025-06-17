@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+
+.logo img {
+    height: 40px; /* adjust as needed for short height */
+    width: auto; /* keeps proper aspect ratio for wide logos */
+    object-fit: contain;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+/* Home Section */
+#home {
+    background: url('./ChatGPT\ Image\ Jun\ 14\,\ 2025\,\ 03_11_26\ PM.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.intro .btn {
+    background-color: #00ffcc;
+    color: #000;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #00cc99;
+}
+
+/* About */
+#about {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Services */
+#services {
+    background-image: url(./istockphoto-1000097670-612x612.jpg);
+    padding: 4rem 2rem;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 1rem;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.portfolio-container img {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+#contact {
+    padding: 4rem 2rem;
+    background-color:beige;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#contact form .btn {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#contact form .btn:hover {
+    background-color: #00cc99;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
